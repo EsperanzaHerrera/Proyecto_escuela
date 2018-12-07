@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <Spinner
+        android:id="@+id/sp_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/et_Rnumero_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Rcalefaccion_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rnumero_sala"
+        android:layout_alignStart="@+id/et_Rnumero_sala"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Rpizarra_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rcalefaccion_sala"
+        android:layout_alignStart="@+id/et_Rcalefaccion_sala"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Rdatashow_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rpizarra_sala"
+        android:layout_alignEnd="@+id/et_Rpizarra_sala"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Rcomputador_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rdatashow_sala"
+        android:layout_alignEnd="@+id/et_Rcalefaccion_sala"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_actualizarS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sp_sala"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="ACTUALIZAR" />
+
+    <Button
+        android:id="@+id/bt_registrarS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_actualizarS"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toStartOf="@+id/bt_eliminarS"
+        android:layout_toEndOf="@+id/bt_actualizarS"
+        android:text="REGISTRAR"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/bt_eliminarS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sp_sala"
+        android:layout_alignBottom="@+id/bt_actualizarS"
+        android:text="ELIMINAR" />
+
+</RelativeLayout>

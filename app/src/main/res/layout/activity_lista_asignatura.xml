@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Spinner
+        android:id="@+id/sp_RAsignatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_RnombreAsignatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sp_RAsignatura"
+        android:layout_below="@+id/sp_RAsignatura"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="" />
+
+
+    <EditText
+        android:id="@+id/et_RhoraAsignatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_RnombreAsignatura"
+        android:layout_below="@+id/et_RnombreAsignatura"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="" />
+
+
+    <EditText
+        android:id="@+id/et_RprofesorAsignatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_RhoraAsignatura"
+        android:layout_below="@+id/et_RhoraAsignatura"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="" />
+
+    <Button
+        android:id="@+id/bt_actualizar_asignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:text="Actualizar" />
+
+    <Button
+        android:id="@+id/bt_eliminar_asignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_actualizar_asignatura"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="0dp"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/bt_registrar_asignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt_actualizar_asignatura"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTRAR"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
+

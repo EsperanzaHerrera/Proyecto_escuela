@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/et_numero_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="N° Sala" />
+
+    <EditText
+        android:id="@+id/et_calefaccion_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_numero_sala"
+        android:layout_alignStart="@+id/et_numero_sala"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tipo Calefaccion?" />
+
+    <EditText
+        android:id="@+id/et_pizarra_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_calefaccion_sala"
+        android:layout_alignStart="@+id/et_numero_sala"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tiene Pizarra?" />
+
+    <EditText
+        android:id="@+id/et_datashow_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pizarra_sala"
+        android:layout_alignEnd="@+id/et_pizarra_sala"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tiene DataShow?" />
+
+    <EditText
+        android:id="@+id/et_computador_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_datashow_sala"
+        android:layout_alignEnd="@+id/et_calefaccion_sala"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tiene Computador?" />
+
+    <Button
+        android:id="@+id/btn_guardar_sala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_numero_sala"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:text="GUARDAR"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

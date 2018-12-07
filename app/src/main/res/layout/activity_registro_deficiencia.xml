@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/et_nombre_deficiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre Deficiencia" />
+
+    <EditText
+        android:id="@+id/et_agresivo_deficiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_nombre_deficiencia"
+        android:layout_alignStart="@+id/et_nombre_deficiencia"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Es agresiva?"/>
+
+    <EditText
+        android:id="@+id/et_medicacion_deficiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_agresivo_deficiencia"
+        android:layout_alignStart="@+id/et_nombre_deficiencia"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Requiere Medicacion?" />
+
+    <EditText
+        android:id="@+id/et_crisis_deficiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_medicacion_deficiencia"
+        android:layout_alignEnd="@+id/et_medicacion_deficiencia"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Genera Crisis?" />
+
+    <EditText
+        android:id="@+id/et_dependencia_deficiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_crisis_deficiencia"
+        android:layout_alignEnd="@+id/et_crisis_deficiencia"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Genera Dependencia?" />
+
+    <Button
+        android:id="@+id/btn_guardar_deficiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_nombre_deficiencia"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:text="GUARDAR"
+        android:onClick="onClick"/>
+
+
+</RelativeLayout>

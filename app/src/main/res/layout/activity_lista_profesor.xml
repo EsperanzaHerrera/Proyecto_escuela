@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Spinner
+        android:id="@+id/sp_profesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp" />
+
+
+    <EditText
+        android:id="@+id/et_Rnombreprofe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/et_Rdireccionprofe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rnombreprofe"
+        android:layout_alignEnd="@+id/et_Rnombreprofe"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Rtelefonoprofe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rdireccionprofe"
+        android:layout_alignEnd="@+id/et_Rdireccionprofe"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_RespecialidadProfe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rtelefonoprofe"
+        android:layout_alignStart="@+id/et_Rtelefonoprofe"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_actuaizarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:text="ACTUALIZAR" />
+
+    <Button
+        android:id="@+id/bt_registarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_actuaizarp"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTRAR"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/bt_eliminarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_Rtelefonoprofe"
+        android:layout_alignBottom="@+id/bt_actuaizarp"
+        android:text="ELIMINAR" />
+
+
+</RelativeLayout>
+

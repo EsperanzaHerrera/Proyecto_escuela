@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/et_nombrealumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre Alumno" />
+
+    <EditText
+        android:id="@+id/et_Rutalumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_apellidoalumno"
+        android:ems="10"
+        android:hint="Rut Alumno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_direccionalumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_Rutalumno"
+        android:ems="10"
+        android:hint="Direccion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_telefonoalumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/et_direccionalumno"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_apoderadoalumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_telefonoalumno"
+        android:ems="10"
+        android:hint="Apoderado"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_medicamentoalumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_apoderadoalumno"
+        android:ems="10"
+        android:hint="Medicamento"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_guardaralumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="GUARDAR"
+        android:onClick="onClick"/>
+
+    <EditText
+        android:id="@+id/et_apellidoalumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_nombrealumno"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_medicamentoalumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
